@@ -1,0 +1,112 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "neuron_info",
+      "description": "Neuron info by bodyId: type, instance, pre, post, size, status, degrees",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "bodyId": {
+            "type": "integer",
+            "description": "neuron bodyId"
+          }
+        },
+        "required": [
+          "bodyId"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "neuron_connections",
+      "description": "Top connections of a neuron: upstream and downstream neighbors with synapse weights",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "bodyId": {
+            "type": "integer"
+          },
+          "top_n": {
+            "type": "integer",
+            "description": "how many neighbors (default 5)"
+          }
+        },
+        "required": [
+          "bodyId"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "find_by_type",
+      "description": "Find all neurons of a given type in the subgraph",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "type_name": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "type_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "shortest_path",
+      "description": "Shortest path between two neurons by bodyId",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "type": "integer"
+          },
+          "b": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "a",
+          "b"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hub_neurons",
+      "description": "Top-N neurons by total degree (hubs of the subgraph)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "top_n": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "graph_summary",
+      "description": "Overall subgraph statistics: neuron count, edge count, density, components",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]
