@@ -1,3 +1,5 @@
+![Engram](Engram.gif)
+
 # We taught the Drosophila fly to speak.
 
 > Previously, the fly could only do what it was told. But now the fly can also talk to people.
