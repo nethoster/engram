@@ -1,6 +1,6 @@
-# Engram — the Drosophila fly connectome that can talk
+# We taught the fly to speak.
 
-> We taught a fly to understand human language.
+> Previously, the fly could only do what it was told. But now the fly can also talk to people.
 
 ## 📜 License — read this before you fork
 
