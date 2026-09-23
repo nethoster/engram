@@ -1,6 +1,6 @@
 # Engram — the Drosophila fly connectome that can talk
 
-> A local Drosophila melanogaster connectome subgraph (2000 neurons, 225k edges) driven by a local uncensored LLM, exposed as a Telegram bot that "speaks" the connectome through tool calling.
+> We taught a fly to understand human language.
 
 ## 📜 License — read this before you fork
 
